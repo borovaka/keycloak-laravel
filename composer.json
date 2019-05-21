@@ -1,0 +1,32 @@
+{
+    "name": "borovaka/keycloak-laravel",
+    "description": "Keycloak OAuth2 Provider for Laravel Socialite",
+    "license": "MIT",
+    "authors": [{
+        "name": "Borislav Anchev",
+        "email": "borovaka@gmail.com"
+    }],
+    "keywords": [
+        "Laravel",
+        "Socialite Provider",
+        "Keycloak Provider",
+        "OAuth2",
+        "Avdevs"
+    ],
+    "require": {
+        "firebase/php-jwt": "^5.0",
+        "php": "^7.1.3",
+        "socialiteproviders/manager": "^3.3",
+        "league/oauth2-client": "^2.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Borovaka\\KeycloakLaravel\\": "src"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
