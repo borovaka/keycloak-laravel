@@ -81,11 +81,11 @@ class KeycloakProvider extends AbstractProvider
      */
     public function __construct(array $options = [], array $collaborators = [])
     {
+        parent::__construct($options, $collaborators);
         if (isset($options['encryptionKeyPath'])) {
             $this->setEncryptionKeyPath($options['encryptionKeyPath']);
             unset($options['encryptionKeyPath']);
         }
-        parent::__construct($options, $collaborators);
     }
 
 
